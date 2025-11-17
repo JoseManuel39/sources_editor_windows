@@ -32,14 +32,15 @@ requisitos.
 - python3
 - pip
 - pyinstaller
+- windows-curses
 
 #### procedimiento.
 - posicionase en el directorio donde se encuentra el main.py
 
 - ejecutar el siguiente comando.
 ```
-pyinstaller --onefile zafiroed.py
-# esto creara un ejecutable con la terminal.
+pyinstaller --onefile --name zafiro main.py
+# esto creara un ejecutable con la terminal en la carpeta dist.
 ```
 ---
 ## Funcionamiento.
@@ -52,7 +53,9 @@ status.
 Si quieres abrir un archivo con zafiro que se encuentra dentro del mismo directorio, puedes ejecutrar el siguiente comando.
 "zafiro archivo.extension"
 
-```zafiro main.py```
+```zafiro.exe main.py```
+
+Nota: el nombre que se le de al ejecutable sera el que se utilize.
 
 Si el editor encuentra el archivo en ese directorio entonces lo abrirá.
 
@@ -76,7 +79,7 @@ ctrl + x --> "Cerrar archivo y vaciar buffer".
 ---
 ## Personalización del editor.
 Si quieres personalizar el editor a tu gusto, puedes hacerlo de la siguiente manera.
-- Crea el directorio oculto .zafiro con el siguiente comando: "mkdit .zafiro"
+- Crea el directorio oculto .zafiro en el siguiente directorio ejemplo: "C:\Users\TU_USUARIO\.zafiro"
 - Ingresa al directorio con el siguiente comando: ```cd ~/.zafiro```
 - Crea un archivo llamado "config.json".
 - Puedes crear tu propia configuración o puedes visitar nuestra biblioteca de temas en nuestro sitio web.
@@ -91,3 +94,4 @@ ni librerías pesadas. Cada línea está pensada para ser clara, funcional y ext
 ## Licencia
 
 Este proyecto es de código abierto. Puedes usarlo, modificarlo y compartirlo libremente.
+
